@@ -12,11 +12,10 @@ public class ListPrint {
 		if(null == listNode)
 			return null;
 		//½«listNode°´Ðò´æÈëlist
-		while (null != listNode.next) {
+		while (null != listNode) {
 			list.add(listNode.val);
 			listNode = listNode.next;
 		}
-		list.add(listNode.val);
 		//µ¹Ðò
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		for(int i = list.size()-1; i >= 0 ;i--){

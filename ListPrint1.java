@@ -26,11 +26,10 @@ public class ListPrint1 {
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		if(null == listNode)
 			return result;
-		while(null != listNode.next){
-			stack.add(listNode.val);
+		while(null != listNode){
+			stack.push(listNode.val);
 			listNode = listNode.next;
 		}
-		stack.add(listNode.val);
 		while(!stack.isEmpty()){
 			result.add(stack.pop());
 		}
